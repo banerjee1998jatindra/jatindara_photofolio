@@ -1,0 +1,1436 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Cinzel+Decorative&family=Hind+Siliguri&family=Meie+Script&family=PT+Serif&family=Poppins:ital,wght@1,500&family=Raleway:wght@500&family=Roboto+Slab&family=Sacramento&family=Slabo+27px&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 640px;
+    /* background: linear-gradient(to top, rgba(0,0,0,0.1),rgba(0,0,0,0.5)),url('https://image.wedmegood.com/resized/1900X/uploads/city_bg_image/1/delhi_bg.jpeg'); */
+
+}
+.nav-toggle {
+    cursor: pointer;
+    font-size: 24px;
+    display: none;
+    color: white;
+    /* hide the toggle button by default */
+}
+nav {
+    width: 100%;
+    /* position: absolute; */
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px white;
+    position: fixed;
+    font-family: 'Cinzel Decorative', cursive;
+    z-index: 4;
+    transition: 1s;
+
+}
+#home_js{
+    color: #F45B0E;
+}
+.navigation-logo {
+    height: auto;
+}
+
+.navigation-logo p img {
+    width: 350px;
+    height: 60px;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px 17px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: auto;
+    color: aliceblue;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+#contact_js i {
+    font-size: 16px;
+    margin-left: 7px;
+    /* color: #25E72D; */
+}
+
+.navbar ul li a:hover {
+    border-bottom: 2px solid #F45B0E;
+}
+
+/* dropdown */
+#service_js {
+    position: relative;
+}
+
+#service_js i {
+    font-size: 20px;
+    padding-left: 6px;
+}
+
+.dropdown_service_section {
+    width: 210px;
+    padding: 0px 8px;
+    height: auto;
+    position: absolute;
+    top: 45px;
+    display: none;
+    background-color: lightslategrey;
+}
+
+.dropdown_service_section ul li {
+    list-style-type: none;
+    display: block;
+    padding: 7px 0px;
+    padding-top: 12px;
+
+}
+
+.dropdown_service_section ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#service_js:hover+.dropdown_service_section {
+    display: block;
+}
+
+.dropdown_service_section:hover {
+    display: block;
+}
+
+
+/* banner text */
+.banner-text {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    padding-top: 115px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+
+}
+
+.banner-text h1 {
+    font-size: 53px;
+    font-family: 'Sacramento', cursive;
+}
+
+.banner-text p {
+    margin: 11px 0px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 20px;
+}
+
+/* banner slider........ */
+.slider {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 640px;
+    display: none;
+}
+
+.slide1 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('https://image.wedmegood.com/resized/1900X/uploads/city_bg_image/1/delhi_bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.slide2 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('https://slawawalczak.com/wp-content/uploads/2018/12/Luxury-Indian-Wedding-Photography-London-Destination-8.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.slide3 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../image/wdn2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.slide4 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../image/wdn3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.pre,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 47%;
+    padding: 10px 20px;
+    font-size: 30px;
+    color: aliceblue;
+    z-index: 1;
+    border-radius: 50%;
+    transition: 0.6s;
+}
+
+.next {
+    right: 0px;
+}
+
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pre:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* main section */
+
+.card_container {
+    width: 100%;
+    height: auto;
+    /* padding-bottom: 30px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    overflow: hidden;
+
+}
+
+.card_section {
+    height: auto;
+    background-color: black;
+}
+
+.card_section h1 {
+    padding-top: 45px;
+    text-align: center;
+    color: #F0DE0C;
+    /* background-color: black; */
+}
+
+.card {
+    width: 340px;
+    height: 420px;
+    margin: 50px 24px;
+    border-radius: 5px;
+    /* box-shadow: 0px 3px 10px white; */
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 420px;
+}
+
+.intro {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 50px;
+    color: aliceblue;
+    transition: 0.7s;
+}
+
+.intro p {
+    visibility: hidden;
+    opacity: 0;
+    font-size: 19px;
+}
+
+.card h2 {
+    font-weight: 500;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .intro {
+    height: 250px;
+    bottom: 240px;
+    /* background: black; */
+}
+
+.card:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* wedding information text */
+.wedding-information-text {
+    height: 500px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.wedding-information-text p {
+    padding: 10px 200px;
+    /* border: 1px solid red; */
+}
+
+#wedding-heading {
+    font-size: 60px;
+    letter-spacing: 2px;
+    color: #B89014;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+#wedding-secound-text {
+    font-size: 45px;
+    color: #F4BC0B;
+    font-family: 'Sacramento', cursive;
+}
+
+#wedding-third-text {
+    color: #B6B4AD;
+    font-family: 'PT Serif', serif;
+}
+
+#wedding-fourth-text {
+    color: #F0CCA2;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+#wedding-fifth-text {
+    color: #F6F2ED;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+/* gallery */
+#main_gallery_container {
+    width: 100%;
+    padding: 30px 0px;
+    height: auto;
+    background-color: #1f1f1f;
+    overflow: hidden;
+
+
+}
+
+#gallery-1 {
+    height: auto;
+    text-align: center;
+    color: #fbb30c;
+    font-size: 48px;
+    padding: 20px 0px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+
+/* .sm_lg_img::before{
+    content: '';
+    background: rgba(0,0,0,0.5);
+    color: white;
+    position: absolute;
+    z-index: 1;
+    width: 45%;
+    height: 215px;
+    transition: -1s;
+} */
+/* .sm_lg_img:hover::before{
+    content: '';
+    background:none;
+    position: absolute;
+    z-index: -1; */
+/* width: 45%;
+    height: 215px; */
+/* transition: 1s; */
+
+/* } */
+.sm_lg_img:hover {
+    transform: scale(1.7, 1.7);
+    position: relative;
+    z-index: 2;
+}
+
+.sm_size_g:hover {
+    transform: scale(1.7, 1.7);
+    position: relative;
+    z-index: 2;
+}
+
+/* .sm_size_g::before{
+    content: '';
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 1;
+    width: 21%;
+    height: 215px;
+    transition: -1s;
+
+} */
+/* .sm_size_g:hover::before{
+    content: '';
+    background: none;
+    position: absolute;
+    z-index: -1; */
+/* width: 21%;
+    height: 215px;
+    transition: all 1s; */
+
+/* } */
+.top_gallery {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle_gallery {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom_gallery {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sm_lg_img {
+    width: 45%;
+    height: 250px;
+    margin: 1px;
+    background-color: aliceblue;
+    transition: 1s;
+}
+
+.sm_size_g {
+    width: 21%;
+    height: 250px;
+    margin: 1px;
+    background-color: aliceblue;
+    transition: 1s;
+}
+
+.sm_lg_img img {
+    width: 100%;
+    height: 250px;
+}
+
+.sm_size_g img {
+    width: 100%;
+    height: 250px;
+}
+
+#gallery-view-more {
+    margin: 0px auto;
+    text-align: center;
+    padding: 60px 0px;
+
+}
+
+#gallery-view-more p {
+    display: inline-block;
+}
+
+#gallery-view-more p a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 28px;
+    color: white;
+    border: 2px solid #F4BC0B;
+    transition: 0.7s;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+#gallery-view-more p a:hover {
+    background-color: #F4BC0B;
+    color: #1f1f1f;
+}
+
+/* booking information section */
+
+.booking_information {
+    padding: 20px 0px;
+    background-color: black;
+}
+
+.booking_information h1 {
+    text-align: center;
+    padding: 40px 0px;
+    color: #B89014;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.booking-update-information {
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.booking-update-information-image {
+    width: 50%;
+    padding: 0px 20px;
+
+}
+
+.booking-update-information-image img {
+    margin-left: 20%;
+}
+
+.booking-update-information-right {
+    width: 50%;
+    padding: 0px 80px;
+}
+
+.booking-information-heading {
+    display: inline-block;
+    font-size: 25px;
+    color: black;
+    background-color: #FED028;
+    padding: 8px 25px;
+    font-family: 'Aboreto', cursive;
+}
+
+.booking-information-text {
+    padding: 40px 0px;
+    margin-right: 30%;
+    font-size: 19px;
+    color: #F6F2ED;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.booking-information-down-text {
+    text-align: center;
+    padding: 40px 0px;
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: #F0DE0C;
+    font-family: 'Sacramento', cursive;
+}
+
+/* auto slider */
+.auto_slider {
+    padding: 40px 60px;
+    background-color: #000;
+}
+
+.auto_slider h1 {
+    color: white;
+    text-align: center;
+    padding-bottom: 60px;
+    font-size: 45px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.bss-slides {
+    background: #000;
+    position: relative;
+    display: block;
+}
+.bss-img1{
+    background-image: url(https://weddedwonderland.com/wp-content/uploads/2018/04/FN-Wedding-000658_preview.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bss-img2{
+    background-image: url(https://weddedwonderland.com/wp-content/uploads/2018/04/FN-Wedding-000851_preview.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bss-img3{
+    background-image: url(https://images.pexels.com/photos/4364784/pexels-photo-4364784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bss-img4{
+    background-image: url(https://www.aligstudios.com/sites/default/files/inline-images/pre-wedding%20photo%20shoot%204.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bss-img5{
+    background-image: url(https://www.lieben.no/wp-content/uploads/2018/03/lieben_cover22-2048x1366.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bss-slides:focus {
+    outline: 0;
+}
+
+.bss-slides .bss-sli {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 600px;
+}
+
+.bss-slides .bss-sli:first-child {
+    position: relative;
+}
+
+.bss-slides .bss-sli img {
+    opacity: 0;
+    -webkit-transition: opacity 1.2s;
+    transition: opacity 1.2s;
+    position: relative;
+    height: 600px;
+}
+
+.bss-slides .bss-show {
+    z-index: 3;
+}
+
+.bss-slides .bss-show img {
+    opacity: 1;
+}
+
+.bss-next,
+.bss-prev {
+    color: #fff;
+    position: absolute;
+    background: #000;
+    background: rgba(0, 0, 0, .6);
+    top: 50%;
+    z-index: 4;
+    font-size: 2em;
+    margin-top: -1.2em;
+    opacity: .5;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.bss-next:hover,
+.bss-prev:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.bss-next {
+    right: 0;
+    padding: 10px 5px 15px 10px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.bss-prev {
+    left: 0;
+    padding: 10px 10px 15px 5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+
+/* form and contact.................... */
+.main-form-container {
+    width: 100%;
+    height: 650px;
+    background-color: rgb(19, 17, 17);
+}
+
+.left-contact-container {
+    float: left;
+    width: 40%;
+    height: 500px;
+    background-image: url(../image/18+\(10\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 50px;
+    left: 110px;
+}
+
+.left-contact-container h1 {
+    text-align: center;
+    color: #F0DE0C;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.left-contact-container p a {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1px 15px;
+}
+
+.right-form-container {
+    float: right;
+    width: 50%;
+}
+
+.form-sub-container {
+    /* margin: 17px 0px; */
+    padding: 2px 0px;
+    /* border: 1px solid red; */
+}
+
+input[type="text"] {
+    width: 44.4%;
+    height: 35px;
+    margin-top: 16px;
+    font-size: 13px;
+    border: none;
+    background: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+input[type="date"] {
+    display: block;
+    width: 90%;
+    height: 30px;
+    margin-top: 16px;
+    font-size: 13px;
+    border: none;
+    background: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+select {
+    display: block;
+    width: 90.3%;
+    height: 30px;
+    margin-top: 16px;
+    font-size: 12px;
+    border: none;
+    background: none;
+    color: white;
+    border-bottom: 1px solid white;
+
+}
+
+textarea {
+    display: block;
+    width: 90%;
+    height: 65px;
+    margin-top: 16px;
+    font-size: 12px;
+    border: none;
+    background: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 25%;
+    height: 30px;
+    margin-top: 16px;
+    font-size: 18px;
+    border: 1px solid #F4BC0B;
+    background-color: black;
+    color: white;
+}
+
+form {
+    display: inline-block;
+    /* border: 1px solid red; */
+    width: 90%;
+    height: auto;
+    padding: 16px 0px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    color: beige;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    color: #F4BC0B;
+    padding-top: 15px;
+    letter-spacing: 1px;
+
+
+}
+
+input[type="text"]:hover {
+    border-bottom: 2px solid #F4BC0B;
+    color: #F4BC0B;
+}
+
+input[type="date"]:hover {
+    border-bottom: 2px solid #F4BC0B;
+    color: #F4BC0B;
+}
+
+select:hover {
+    border-bottom: 2px solid #F4BC0B;
+    color: #F4BC0B;
+}
+
+textarea:hover {
+    border-bottom: 2px solid #F4BC0B;
+    color: #F4BC0B;
+}
+
+input[type="submit"]:hover {
+    background-color: #F4BC0B;
+    color: black;
+}
+
+/* Footer  */
+.footer_section {
+    width: 100%;
+    height: 300px;
+    background-color: #1f1f1f;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+
+.footerbox {
+    width: 25%;
+    height: 250px;
+    /* border: 1px solid red; */
+    /* position: relative;
+    top: 40px; */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #B8C0B8;
+}
+
+.footerbox button {
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    background-color: #ffba00;
+    border-radius: 12px;
+}
+
+.footerbox p a i {
+    padding: 7px;
+    font-size: 22px;
+    background: none;
+    /* border: 2px solid #EEC11B; */
+    /* border-radius: 20px; */
+
+
+}
+
+/* footer */
+.footer_part {
+    height: auto;
+    background-color: #1f1f1f;
+    padding: 45px 50px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.footerItem {
+    width: 30%;
+    height: auto;
+    /* padding: 15px 0px; */
+    color: #B6B4AD;
+
+}
+
+.footerItem h2 a i {
+    font-size: 22px;
+    margin: 0px 5px;
+    padding: 0px 5px;
+}
+
+#footer-1 p {
+    padding: 6px 0px;
+}
+
+#footer-1 p i {
+    padding: 0px 4px;
+}
+
+#footer-2 {
+    text-align: center;
+}
+
+#footer-1 button {
+    padding: 4px 9px;
+    border: none;
+    border-radius: 8px;
+    background-color: #F4BC0B;
+    font-size: 14px;
+}
+
+/* responsive */
+@media screen and (max-width: 1199px) {
+
+    /* wedding information */
+    #wedding-secound-text {
+        font-size: 40px;
+    }
+
+    #wedding-third-text {
+        font-size: 15px;
+    }
+
+    #wedding-fourth-text {
+        font-size: 14px;
+    }
+
+    #wedding-fifth-text {
+        font-size: 13px;
+    }
+
+    /* booking information section */
+    .booking-update-information-image img {
+        height: 300px;
+    }
+
+    .booking-information-heading {
+        padding: 0px 0px;
+    }
+
+    .booking-information-text {
+        font-size: 15px;
+        margin-right: 0%;
+
+    }
+
+    .booking-information-down-text {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        height: 550px;
+    }
+
+    .banner-text h1 {
+        font-size: 35px;
+    }
+
+    .banner-text p {
+        font-size: 15px;
+    }
+
+    /* main section */
+    .card_section {
+        padding: 80px 0px;
+    }
+
+    .card_container {
+        padding: 0px 0px;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 340px;
+        height: 420px;
+        margin: 30px 24px;
+
+    }
+
+    .card img {
+        width: 100%;
+        height: 420px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    /* wedding information section */
+    .wedding-information-text {
+        height: 800px;
+    }
+
+    /* booking information section */
+
+    .booking_information h1 {
+        font-size: 30px;
+    }
+
+    .booking-update-information-image img {
+        height: 245px;
+        margin-left: 15%;
+    }
+
+    .booking-information-heading {
+        padding: 6px 20px;
+        font-size: 18px;
+    }
+
+    .booking-information-text {
+        padding: 5px 0px;
+        font-size: 14px;
+    }
+
+    .booking-information-down-text {
+        font-size: 33px;
+        letter-spacing: 0px;
+    }
+
+    /* form */
+    .main-form-container {
+        height: 700px;
+    }
+
+    .left-contact-container {
+        left: 60px;
+    }
+
+    /* footer */
+    .footer_part {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerItem {
+        width: 90%;
+        margin: 5px 0px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    /* toggle nav */
+    .navbar ul {
+        display: none;
+        /* hide the menu by default */
+        position: absolute;
+        /* position the menu absolutely */
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+    }
+
+    .nav-toggle {
+        display: block;
+        /* show the toggle button */
+    }
+    /* ............. */
+    .navbar ul li {
+        padding: 16px 12px;
+        display: block;
+    }
+
+    .container {
+        height: 500px;
+    }
+
+    .banner-text h1 {
+        font-size: 35px;
+    }
+
+    .banner-text p {
+        font-size: 15px;
+    }
+
+    .pre,
+    .next {
+        top: 58%;
+        font-size: 25px;
+    }
+
+    /* main section */
+    .card_section {
+        padding-top: 150px;
+    }
+
+    /* wedding information section */
+    #wedding-heading {
+        font-size: 50px;
+    }
+
+    .wedding-information-text p {
+        padding: 10px 100px;
+    }
+
+    /* booking information section */
+    .booking-update-information {
+        flex-direction: column;
+    }
+
+    .booking-update-information-image {
+        width: 100%;
+    }
+
+    .booking-update-information-right {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* gallery */
+    #gallery-1 {
+        font-size: 37px;
+    }
+
+    .media_d_none {
+        display: none;
+    }
+
+    .sm_size_g {
+        width: 40%;
+    }
+
+    #gallery-view-more p a {
+        padding: 6px 25px;
+        font-size: 16px;
+    }
+
+    /* form */
+    .main-form-container {
+        height: 700px;
+    }
+
+    .left-contact-container {
+        width: 40%;
+        left: 30px;
+    }
+
+    .left-contact-container h1 {
+        font-size: 25px;
+    }
+
+    .right-form-container {
+        width: 53%;
+    }
+
+    label {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    /* nav */
+
+    .container {
+        height: 450px;
+    }
+
+    .navigation-logo {
+        display: none;
+    }
+
+    .navigation-logo p img {
+        width: 300px;
+        height: 40px;
+    }
+
+    .navbar ul li {
+        padding: 8px 12px;
+    }
+
+    .navbar ul li a {
+        font-size: 13px;
+    }
+
+    /* banner */
+    .slider {
+        height: 450px;
+    }
+
+    .banner-text {
+        height: 400px;
+        padding-top: 30px;
+    }
+
+    .banner-text h1 {
+        font-size: 20px;
+    }
+
+    .banner-text p {
+        font-size: 10px;
+        margin: 8px 0px;
+    }
+
+    .pre,
+    .next {
+        top: 36%;
+    }
+
+    /* main section */
+    .card_section {
+        padding: 0px 0px;
+    }
+
+    .card {
+        width: 280px;
+        height: 280px;
+    }
+
+    .intro {
+        width: 280px;
+        height: 200px;
+        bottom: 190px;
+    }
+
+    .card:hover .intro {
+        height: 250px;
+        bottom: 320px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .intro p {
+        font-size: 14px;
+    }
+
+    /* wedding information section */
+    .wedding-information-text {
+        height: auto;
+    }
+
+    #wedding-heading {
+        font-size: 33px;
+    }
+
+    .wedding-information-text p {
+        padding: 10px 50px;
+    }
+
+    /* gallery */
+    #main_gallery_container {
+        padding: 20px 0px;
+    }
+
+    .g_media {
+        flex-direction: column;
+    }
+
+    .sm_size_g {
+        width: 87%;
+    }
+
+    /* booking information section */
+
+    .booking-update-information {
+        height: 600px;
+    }
+
+    .booking_information h1 {
+        font-size: 20px;
+        padding: 0px 0px;
+    }
+
+    .booking-update-information-image img {
+        width: 250px;
+    }
+
+    .booking-update-information-image img {
+        left: 60px;
+    }
+
+    .booking-information-heading {
+        font-size: 17px;
+        padding: 8px 10px;
+        right: 50px;
+    }
+
+    .booking-information-text {
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-top: 10px;
+        padding: 0px 0px;
+        font-size: 12px;
+    }
+
+    .booking-information-down-text {
+        font-size: 25px;
+        padding: 0px 0px;
+    }
+
+    /* form and contact */
+    .main-form-container {
+        height: auto;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .left-contact-container {
+        width: 100%;
+        height: 350px;
+        top: 0px;
+        left: 0px;
+    }
+
+    .right-form-container {
+        width: 100%;
+    }
+
+    /* footer */
+    .footer_part p {
+        font-size: 13px;
+    }
+
+    .footerItem h2 {
+        font-size: 18px;
+    }
+
+    #footer-2 img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    nav {
+        display: none;
+    }
+
+    .navbar ul li a {
+        font-size: 12px;
+    }
+
+    .navbar ul li {
+        padding: 8px 6px;
+    }
+
+    .navigation-logo img {
+        width: 250px;
+        height: 30px;
+    }
+
+    /* baner */
+    .container {
+        height: 300px;
+    }
+
+    .banner-text {
+        height: 300px;
+    }
+
+    .slider {
+        height: 300px;
+    }
+
+    .pre,
+    .next {
+        top: 24.5%;
+        padding: 10px 5px;
+    }
+
+    .banner-text h1 {
+        font-size: 19px;
+        text-align: center;
+    }
+
+    .banner-text p {
+        text-align: center;
+    }
+
+    /* main sectioin */
+    #wedding-heading {
+        font-size: 21px;
+    }
+
+    #wedding-secound-text {
+        font-size: 19px;
+    }
+
+    #wedding-third-text {
+        font-size: 8px;
+    }
+
+    #wedding-fourth-text {
+        font-size: 8px;
+    }
+
+    #wedding-fifth-text {
+        font-size: 8px;
+    }
+
+    /* booking */
+    .booking_information h1 {
+        font-size: 14px;
+    }
+
+    .booking-update-information-image {
+        text-align: center;
+
+    }
+
+    .booking-update-information-image img {
+        margin-left: 0%;
+    }
+
+    .booking-information-heading {
+        padding: 0px 0px;
+        font-size: 17px;
+        margin-left: 40px;
+    }
+
+    .booking-update-information-right {
+        padding: 0px 0px;
+    }
+
+    .booking-information-text {
+        width: 80%;
+        margin-right: 0%;
+        margin-left: 40px;
+    }
+
+    .booking-information-down-text {
+        font-size: 20px;
+    }
+
+    /* footer */
+    #footer-2 img {
+        display: none;
+    }
+
+    .media250 {
+        display: none;
+    }
+}

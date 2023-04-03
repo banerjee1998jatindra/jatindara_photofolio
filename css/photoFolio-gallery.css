@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Cinzel+Decorative&family=Hind+Siliguri&family=Meie+Script&family=PT+Serif&family=Poppins:ital,wght@1,500&family=Raleway:wght@500&family=Roboto+Slab&family=Sacramento&family=Slabo+27px&display=swap");
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.gallery_nav{
+    background-color: lightslategray;
+    box-shadow: none;
+}
+#gallery_js{
+    color: #F45B0E;
+}
+
+.banner-container {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../image/photofolio-gallery-image-banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    padding-top: 150px;
+    text-align: center;
+    background-attachment: fixed;
+    
+   
+    
+}
+
+.banner-container h1 {
+    padding: 5px 0px;
+    color: #F0DE0C;
+    font-size: 50px;
+    font-family: 'Sacramento', cursive;
+
+}
+
+.banner-container p {
+    font-size: 18px;
+    /* padding: 0px 100px; */
+    color: aliceblue;
+    font-family: 'Hind Siliguri', sans-serif;
+
+}
+
+/* main gallery */
+#gallery-main-0 {
+    height: auto;
+    color: white;
+    padding: 15px 0px;
+    font-family: 'Hind Siliguri', sans-serif;
+
+}
+
+#gallery-text-0-1 {
+    text-align: center;
+}
+
+#gallery-text-0-1 h1 {
+    padding: 20px 0px;
+}
+
+#gallery-text-0-1 p {
+    padding: 0px 400px;
+}
+
+#gallery-0-2 {
+    text-align: center;
+}
+
+#gallery-0-2 ul {
+    padding: 20px 0px;
+}
+
+#gallery-0-2 ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 12px;
+    background-color:  #F45B0E;
+    border-radius: 13px;
+    /* box-shadow: 0px 3px 5px white; */
+}
+#gallery-0-2 ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    /* font-weight: 600; */
+}
+/* gallery image */
+.gallery-img-0{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.gallery-img-0-1{
+    width: 350px;
+    height: 252px;
+    margin: 15px 0px;
+    transition: 1s;
+    
+}
+.gallery-img-0-1:hover{
+    transform: scale(1.7, 1.7);
+}
+#gallery-0-2 ul li:hover{
+    box-shadow: 0px 3px 7px white;
+}

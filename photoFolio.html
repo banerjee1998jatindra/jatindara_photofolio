@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome cdnj link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/PhotoFolio.css">
+    <title>Photofolio</title>
+</head>
+
+<body>
+    <header>
+        <!-- navigation -->
+        <div class="container">
+            <nav id="stick_nav">
+                <div class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="navigation-logo">
+                    <p><img src="./image/Alternative+Logo+Transparent+Background+white.png" alt="company-logo"></p>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#" onclick="changeColor(1)" id="home_js">Home</a></li>
+                        <li><a href="./photofolio-about.html" onclick="changeColor(2)" id="about_js">About</a></li>
+                        <li><a href="./photofolio-gallery.html" onclick="changeColor(3)" id="gallery_js">Gallery</a></li>
+                        <li><a href="#" onclick="changeColor(4)" id="service_js">Services<i class="fa-sharp fa-solid fa-chevron-down"></i></a>
+                            <div class="dropdown_service_section">
+                                <ul>
+                                    <li><a href="#">Wedding</a></li>
+                                    <li><a href="#">Pre wedding</a></li>
+                                    <li><a href="#">Birth day party</a></li>
+                                    <li><a href="#">Baby photoshoot</a></li>
+                                    <li><a href="#">occasion purpose</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./contact.html" onclick="changeColor(5)" id="contact_js">Contact<i class="fa-solid fa-phone"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- banner text -->
+            <div class="banner-text">
+                <h1>Business, Wedding & Event Photography</h1>
+                <p>Specializing in Headshots, Portraits, Events, Corporate Bios, </p>
+                <p>Websites, Publications, LinkedIn Headshots in the San Francisco Bay Area</p>
+                <!-- <p id="scroll-down"><span style="background-color: rgba(0,0,0,0.5);">[Scroll Down ↓]</span></p> -->
+            </div>
+
+            <div class="slider slide1"></div>
+            <div class="slider slide2"></div>
+            <div class="slider slide3"></div>
+            <div class="slider slide4"></div>
+
+            <!-- pre next button -->
+            <span class="pre" onclick="changeSlide(-1)"><i class="fa-solid fa-chevron-left"></i></span>
+            <span class="next" onclick="changeSlide(1)"><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+    </header>
+    <main>
+        <section class="card_section">
+            <h1>WHAT TO EXPECT</h1>
+            <div class="card_container">
+                <div class="card">
+                    <img src="./image/004+(6).jpg">
+                    <div class="intro">
+                        <h2>A Touch of Magic</h2>
+                        <p style="padding: 18px;"><span class=" box-text-media">Whatever your favorite fantastical realm
+                                is, I’d love to take you there. A creative composite is complimentary with your wedding
+                                collection, or you can choose to book a session specifically to have one created. Don’t
+                                be shy, talk nerdy to me.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./image/002+(3).jpg">
+                    <div class="intro">
+                        <h2>Rave Reviews</h2>
+                        <p style="padding: 14px; font-family: 'Slabo 27px', serif;"><span
+                                class="box-text-media box-two-text">“Ariana and her husband (Maddox Made Film) recently
+                                shot our wedding. From the moment we booked them they were professional and very
+                                responsive to all the questions we had. and videos. I would highly recommend both of
+                                them.” - Brian + Jill</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./image/003+(8).jpg">
+                    <div class="intro">
+                        <h2>Recent Weddings</h2>
+                        <p style="padding: 18px;"><span class="box-text-media">Wondering what your wedding day will look
+                                like through my lens? Here are full wedding galleries so you can see what every aspect
+                                of my wedding coverage details, photos, to the big dance moves. (P.S.: you only need an
+                                email address to open them!)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- wedding information section  -->
+        <div class="wedding-information-text">
+            <p><span id="wedding-heading">—WEDDINGS—</span></p>
+            <p><span id="wedding-secound-text">capturing love stories across Kentuky + beyond</span></p>
+            <p><span id="wedding-third-text">ARIANA JORDAN PHOTOGRAPHY HAS OVER A DECADE OF EXPERIENCE CAPTURING WEDDING
+                    DAYS AND HAS BEEN A FULL-TIME WEDDING PHOTOGRAPHER SINCE 2016. SHE + HER HUSBAND DREW (OF MADDOX
+                    MADE FILM) PROVIDE WEDDING PHOTOGRAPHY +VIDEOGRAPHY TO ALL OF CENTRAL KENTUCKY + SURROUNDING AREAS
+                    AND IS AVAILABLE FOR DESTINATION LOCATIONS + ELOPEMENTS. </span></p>
+            <p><span id="wedding-fourth-text">Choosing the right wedding photographer is all about finding someone you
+                    connect with, whose style you love, and whose personality meshes with your own. How your wedding day
+                    is remembered—it’s kind of a big deal. </span></p>
+            <p><span id="wedding-fifth-text">I might be that person, and if you look through this site and think, “wow,
+                    I like this, she seems cool!” then I would love to hear from you! We can check a big box off of your
+                    wedding planning list: Capturing the moments?—we’ve got it covered.</span></p>
+        </div>
+        <!-- gallery -->
+        <div id="main_gallery_container">
+            <h2 id="gallery-1">- gallery -</h2>
+            <div class="top_gallery g_media">
+                <div class="sm_lg_img media_d_none">
+                    <img src="./image/Chilliwack-Wedding-Photographer-3-6.jpg" alt="">
+                </div>
+                <div class="sm_size_g">
+                    <img src="https://www.wsphotography.us/wp-content/uploads/2014/11/015.jpg" alt="">
+                </div>
+                <div class="sm_size_g">
+                    <img src="https://www.123photography.co.uk/wp-content/uploads/2019/06/wedding-photographer-leeds-23-1600x1000.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="middle_gallery g_media">
+                <div class="sm_size_g">
+                    <img src="http://1.bp.blogspot.com/-3AcvxfEg_FE/TnQmTwtihsI/AAAAAAAAAEo/J4UdbtHr_Ps/s1600/wedding_photography_tips-1010_1000.jpg"
+                        alt="">
+                </div>
+                <div class="sm_lg_img media_d_none">
+                    <img src="./image/Green-Bay-wedding-photographer-Rock-Garden 1.jpg" alt="">
+                </div>
+                <div class="sm_size_g">
+                    <img src="http://webneel.com/daily/sites/default/files/images/daily/01-2014/22-indian-wedding-photography.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="bottom_gallery g_media">
+                <div class="sm_size_g">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5415b390e4b07804ec78d04e/1626466951227-J8VWS46WRWL5JULUMP51/0061+Ariana+Jordan+Photo+-+Cassie+Allen+Family+0854.jpg?format=1500w"
+                        alt="">
+                </div>
+                <div class="sm_size_g">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5415b390e4b07804ec78d04e/1626467685550-BWDN5E7NC67BVVL2IENT/18+%283%29.jpg?format=1500w"
+                        alt="">
+                </div>
+                <div class="sm_lg_img media_d_none">
+                    <img src="./image/6718949f4568c405fdd51b40cfe4e096-1.jpg" alt="">
+                </div>
+            </div>
+            <div id="gallery-view-more">
+                <p><a href="./photofolio-gallery.html">View more</a></p>
+            </div>
+        </div>
+        <!-- booking information section -->
+        <section class="booking_information">
+            <h1>NOW BOOKING FOR 2023 + 2024</h1>
+            <div class="booking-update-information">
+                <div class="booking-update-information-image">
+                    <img src="./image/booking-update-information-image.jpg" alt="update-image" height="350px">
+                </div>
+                <div class="booking-update-information-right">
+                    <p class="booking-information-heading">Save Your Date</p>
+                    <div class="booking-information-text">
+                        <p>Wedding dates are reserved with a signed contract + paid
+                            retainer. Contact me to set up a personal consultation and get the ball rollin’! Let’s meet
+                            for
+                            coffee (or hop on the phone) and get to know each other! Making friends with the couples I
+                            work
+                            with is one of the most important elements of what I do. I can’t wait to get to know you!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="booking-information-down-text">the following dates are already saved:</p>
+        </section>
+        <!-- auto slider -->
+        <section class="auto_slider">
+            <h1>- Our best Photography -</h1>
+            <div class="bss-slides demo1">
+                <div class="bss-sli bss-img1"></div>
+                <div class="bss-sli bss-img2"></div>
+                <div class="bss-sli bss-img3"></div>
+                <div class="bss-sli bss-img4"></div>
+                <div class="bss-sli bss-img5"></div>
+            </div> <!-- // bss-slides -->
+            <script src="https://leemark.github.io/better-simple-slideshow/demo/js/hammer.min.js"></script><!-- for swipe support on touch interfaces -->
+        </section>
+        <!-- form section -->
+        <div class="main-form-container">
+            <div class="left-contact-container">
+                <h1>—LET’S CONNECT—</h1>
+            </div>
+            <div class="right-form-container">
+                <form onsubmit="return validationsubmit()">
+                    <div class="form-sub-container">
+                        <label for="name">: What's your name? </label>
+                        <div class="first-name">
+                            <input type="text" name="name" id="nam_1st_check" placeholder="First name">
+                            <input type="text" name="name" id="nam_2nd_check" placeholder="Last name">
+                            <p id="nam_1st_error"></p>
+                            <p id="nam_2nd_error"></p>
+                        </div>
+                    </div>
+                    <!-- ......................... -->
+                    <!-- <div class="name">
+                        <div class="text_name">
+                            <label for="name">: If you're getting married, what's your partner's name?</label>
+                            <div class="first-name">
+                                <input type="text" name="name" placeholder="First name">
+                                <input type="text" name="name" placeholder="Last name">
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- ............................... -->
+                    <div class="form-sub-container">
+                        <label for="mail">: Enter your email & phone number*</label>
+                        <div class="mail-number">
+                            <input type="text" name="mail" id="mail_check" placeholder="Eg: example@gmail.com">
+                            <input type="text" name="number" id="number_check" placeholder="Eg: +91 0000000">
+                            <p id="mail_error"></p>
+                            <p id="number_error"></p>
+                        </div>
+                    </div>
+                    <div class="form-sub-container">
+                        <label for="session">: What kind of session are you interested in? *</label>
+                        <select name="session" id="session_check">
+                            <option value="wedding" id="wedding_js">Wedding</option>
+                            <option value="engagement/couple" id="engagement_js">Engagement / couple</option>
+                            <option value="family" id="familt_js">family</option>
+                            <option value="brand+Business" id="brand_js">Brand + Businesses</option>
+                        </select>
+                        <p id="session_error"></p>
+                    </div>
+                    <div class="form-sub-container">
+                        <label for="dob">: Do you have a specific date in mind?</label>
+                        <input type="date" id="dob_check" name="dob">
+                        <p id="dob_error"></p>
+                    </div>
+                    <div class="form-sub-container">
+                        <label for="message">: Tell me more! About you! About your plans and ideas!*</label>
+                        <textarea id="massege_check">Your Message</textarea>
+                        <p id="message_error"></p>
+                    </div>
+                    <div class="form-sub-container">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <br>
+        <div class="footer_part">
+            <div class="footerItem" id="footer-1">
+                <h2 style="padding: 6px 0px;">Contact</h2>
+                <p><i class="fa-solid fa-location-dot" style="color: #3a31a3;"></i> 875, Barasat Nibedita pally Road
+                    p.o-Noapara Sanatan Samity Club Kolata 700125, West Bengal</p>
+                <p><i class="fa-solid fa-phone" style="color:  #15c854 ;" id="contact123"></i> +91 8013195169</p>
+                <p class="media250"><i class="fa-solid fa-envelope" style="color:  #1bb6bb ;"></i>
+                    jatindrobanerjee@gmail.com</p>
+                <button>Get An Estimate</button>
+            </div>
+            <div class="footerItem" id="footer-2">
+                <img src="./image/Alternative+Logo+Transparent+Background+white.png" alt="company-logo" width="350px"
+                    height="80px">
+                <h2>Social :<a href="#"><i class="fa-brands fa-facebook" style="color: rgb(0, 166, 255);"></i></a><a
+                        href="#"><i class="fa-brands fa-twitter" style="color: rgb(0, 166, 255);"></i></a><a href="#"><i
+                            class="fa-brands fa-instagram" style="color:  #fb19bd ;"></i></a></h2>
+            </div>
+            <div class="footerItem" id="footer-3">
+                <h2>Let's Design<br>together</h2>
+                <p>By striving for excellence in both we, distinguish itself. Even while we like what we do, we also
+                    take very the goals and aspirations of our clients. It's a delight and an honor to get to know our
+                    customers and then create a house that celebrates all the things and people that are important to
+                    them.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- jquery link -->
+    <script src="./js/jquery.js"></script>
+    <!-- javascript link -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
